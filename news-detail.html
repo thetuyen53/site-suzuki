@@ -1,0 +1,393 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>News detail - Suzuki</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+	<!-- Fonts -->
+	<link href="fonts/lato/lato.css" rel="stylesheet">
+	<!-- CSS -->
+	<!-- Bootstrap CSS
+	============================================ -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- Icon Font CSS
+	============================================ -->
+	<link rel="stylesheet" href="css/icofont.css">
+	<!-- Plugins CSS
+	============================================ -->
+	<link rel="stylesheet" href="css/plugins.css">
+	<!-- ShortCodes CSS
+	============================================ -->
+	<link rel="stylesheet" href="css/shortcode/shortcodes.css">
+	<!-- Style CSS
+	============================================ -->
+	<link rel="stylesheet" href="style.css">
+	<!-- Responsive CSS
+	============================================ -->
+	<link rel="stylesheet" href="css/responsive.css">
+    <!-- Style customizer (Remove these two lines please) -->
+    <link rel="stylesheet" href="css/style-customizer.css">
+
+    <!-- global CSS
+	============================================ -->
+	<link rel="stylesheet" href="css/global.css">
+
+	<!-- Modernizer JS
+	============================================ -->
+	<script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+<!-- Pre Loader
+============================================ -->
+<div class="preloader">
+	<div class="loading-center">
+		<div class="loading-center-absolute">
+			<div class="object object_one"></div>
+			<div class="object object_two"></div>
+			<div class="object object_three"></div>
+		</div>
+	</div>
+</div>
+<!-- Body main wrapper start -->
+<div class="wrapper fix">
+
+	<!-- BEIGN  menuFixed -->
+	<ul id="menuFixed" class="menuFixed">
+		<li>
+			<!--===FORMSEARCH==-->
+			<div class="formSearch">
+				<script language="javascript">
+					
+					function check_search(f)
+					{
+						var key_default = "Từ khóa" ;
+								var keyword = f.keyword.value;
+						var key_len = f.keyword.value.length;
+								if( (keyword==key_default) || (keyword=='') )		{
+							alert("Vui lòng nhập từ khóa");
+							f.keyword.focus();
+							return false;
+						}
+						if( key_len<2 ){
+							alert("Từ khóa tới thiểu là 2 ký tự");
+							f.keyword.focus();
+							return false;
+						}
+						return true;
+						}
+				</script>
+				<form id="formSearch" name="formSearch" method="POST" action="" onsubmit="return check_search(this);" class="box_search">
+					<span class="divText">
+						<input name="keyword" id="keyword" type="text" class="text_search" placeholder="Từ khóa" value="">
+					</span>
+					<span class="divIcon icofont icofont-search">
+						<button id="btn-search" name="btn-search" type="submit" class="btn" value="Tìm"><span>Tìm</span></button>
+					</span>
+					<input name="do_search" value="1" type="hidden">
+					<div class="clear"></div>
+				</form>
+			</div>
+			<!--===FORMSEARCH==-->
+		</li>
+		<li>
+			<span class="divText"><span>123456789</span></span>
+			<span class="divIcon icofont icofont-phone"></span>
+		</li>
+		<li>
+			<a href="#">
+				<span class="divText"><span>Hỗ trợ khách hàng</span></span>
+				<span class="divIcon icofont icofont-wrench"></span>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<span class="divText"><span>Tài chính thông minh</span></span>
+				<span class="divIcon icofont icofont-calculator"></span>
+			</a>
+		</li>
+		<li class="liShare">
+			<span class="divText">
+				<span class="social">
+					<span class="facebook"><a href="#fb" target="_blank"><i class="icofont icofont-social-facebook"></i></a></span>
+					<span class="google-plus"><a href="#google" target="_blank"><i class="icofont icofont-social-google-plus"></i></a></span>
+					<span class="youtube"><a href="#youtube" target="_blank"><i class="icofont icofont-social-youtube"></i></a></span>
+				</span>
+			</span>
+			<span class="divIcon icofont icofont-share-alt"></span>
+		</li>
+	</ul>
+
+
+	<!-- Header 1
+	============================================ -->
+	<div class="header-area header-absolute header-transparent">
+		<div class="header-bottom sticky">
+			<div class="container">
+				<div class="row">
+					<!-- Header Bottom -->
+					<div class="col-xs-12">
+						<div class="navbar-header">
+							<a href="index.html" class="logo navbar-brand"><img id="logo_img" src="_images/logo.png" alt="logo" /></a>
+						</div>
+						<div class="main-menu mean-menu float-right">
+							<nav>
+								<ul>
+									<li class="">
+										<a href="index.html">TRANG CHỦ</a>
+									</li>
+									<li>
+										<a href="product.html">SẢN PHẨM <i class="icofont icofont-simple-down"></i></a>
+										<ul>
+											<li>
+												<a href="product.html#tab-1">XE DU LỊCH</a>
+											</li>
+											<li>
+												<a href="product.html#tab-2">XE TẢI</a>
+											</li>
+											<li>
+												<a href="product.html#tab-3">XE TẢI CŨ</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="news.html">TIN TỨC</a>
+									</li>
+									<li>
+										<a href="service.html">DỊCH VỤ</a>
+									</li>
+									<li class="active">
+										<a href="contact.html">LIÊN HỆ</a>
+									</li>
+									<li class="social-link">
+										<a href="#fb"><img src="_images/icon/1.png" alt=""></a>
+										<a href="#google"><img src="_images/icon/2.png" alt=""></a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<div class="mobile-menu"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- INTRO Area
+	============================================ -->
+	<div class="instructor-area bg-white pb-60">
+		<div class="container">
+			<div class="row service-blog">
+				<div class="blog-item col-md-12">
+					<a href="news-details.html" class="image">
+						<img src="_images/post/1.png" alt="">
+						<i class="icofont icofont-link-alt"></i>
+					</a>
+					<div class="blog-content-pos">
+						<h5 class="title text-white fb"><a href="news-details.html">TIÊU ĐỀ BÀI VIẾT</a></h5>
+						<div class="description">
+							<div class="blog-feature">
+								<p>Nội dung đang chờ cập nhật...</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- News Area
+	============================================ -->
+	<div class="instructor-area bg-white pt-90 pb-60">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-title text-center">
+						<h3 class="heading fb">TIN TỨC LIÊN QUAN</h3>
+					</div>
+				</div>
+			</div>
+			<div class="row news-blog">
+				<div class="news-blog-slick-box">
+					<div class="news-blog-slick">
+						<div class="news-blog-item">
+							<div class="blog-item col-md-6 col-sm-6 col-xs-12">
+								<div class="news-blog-img">
+									<a href="news-detail.html" class="image">
+										<img src="_images/post/event/1.png" alt="" class="img-responsive center-block">
+										<i class="icofont icofont-link-alt"></i>
+									</a>
+								</div>
+								<div class="news-blog-content">
+									<h5 class="title fb"><a href="news-detail.html">Aenean augue eu quam</a></h5>
+									<div class="description">
+										<p>Maecenas pretium, ipsum ullamcorper ac, felis. Pellentesque habitant morbi tristique mauris vehicula sit amet erat. Sed et luctus augue imperdiet ...</p>
+									</div>
+									<a href="news-detail.html" title="" class="text-red fb">XEM CHI TIẾT >>></a>
+								</div>
+							</div>
+							<div class="blog-item col-md-6 col-sm-6 col-xs-12">
+								<div class="news-blog-img">
+									<a href="news-detail.html" class="image">
+										<img src="_images/post/event/2.png" alt="" class="img-responsive center-block">
+										<i class="icofont icofont-link-alt"></i>
+									</a>
+								</div>
+								<div class="news-blog-content">
+									<h5 class="title fb"><a href="news-detail.html">Aenean augue eu quam</a></h5>
+									<div class="description">
+										<p>Maecenas pretium, ipsum ullamcorper ac, felis. Pellentesque habitant morbi tristique mauris vehicula sit amet erat. Sed et luctus augue imperdiet ...</p>
+									</div>
+									<a href="news-detail.html" title="" class="text-red fb">XEM CHI TIẾT >>></a>
+								</div>
+							</div>
+							<div class="blog-item col-md-6 col-sm-6 col-xs-12">
+								<div class="news-blog-img">
+									<a href="news-detail.html" class="image">
+										<img src="_images/post/event/3.png" alt="" class="img-responsive center-block">
+										<i class="icofont icofont-link-alt"></i>
+									</a>
+								</div>
+								<div class="news-blog-content">
+									<h5 class="title fb"><a href="news-detail.html">Aenean augue eu quam</a></h5>
+									<div class="description">
+										<p>Maecenas pretium, ipsum ullamcorper ac, felis. Pellentesque habitant morbi tristique mauris vehicula sit amet erat. Sed et luctus augue imperdiet ...</p>
+									</div>
+									<a href="news-detail.html" title="" class="text-red fb">XEM CHI TIẾT >>></a>
+								</div>
+							</div>
+							<div class="blog-item col-md-6 col-sm-6 col-xs-12">
+								<div class="news-blog-img">
+									<a href="news-detail.html" class="image">
+										<img src="_images/post/event/4.png" alt="" class="img-responsive center-block">
+										<i class="icofont icofont-link-alt"></i>
+									</a>
+								</div>
+								<div class="news-blog-content">
+									<h5 class="title fb"><a href="news-detail.html">Aenean augue eu quam</a></h5>
+									<div class="description">
+										<p>Maecenas pretium, ipsum ullamcorper ac, felis. Pellentesque habitant morbi tristique mauris vehicula sit amet erat. Sed et luctus augue imperdiet ...</p>
+									</div>
+									<a href="news-detail.html" title="" class="text-red fb">XEM CHI TIẾT >>></a>
+								</div>
+							</div>
+						</div>
+						<div class="news-blog-item">
+							<div class="blog-item col-md-6 col-sm-6 col-xs-12">
+								<div class="news-blog-img">
+									<a href="news-detail.html" class="image">
+										<img src="_images/post/event/1.png" alt="" class="img-responsive center-block">
+										<i class="icofont icofont-link-alt"></i>
+									</a>
+								</div>
+								<div class="news-blog-content">
+									<h5 class="title fb"><a href="news-detail.html">Aenean augue eu quam</a></h5>
+									<div class="description">
+										<p>Maecenas pretium, ipsum ullamcorper ac, felis. Pellentesque habitant morbi tristique mauris vehicula sit amet erat. Sed et luctus augue imperdiet ...</p>
+									</div>
+									<a href="news-detail.html" title="" class="text-red fb">XEM CHI TIẾT >>></a>
+								</div>
+							</div>
+							<div class="blog-item col-md-6 col-sm-6 col-xs-12">
+								<div class="news-blog-img">
+									<a href="news-detail.html" class="image">
+										<img src="_images/post/event/2.png" alt="" class="img-responsive center-block">
+										<i class="icofont icofont-link-alt"></i>
+									</a>
+								</div>
+								<div class="news-blog-content">
+									<h5 class="title fb"><a href="news-detail.html">Aenean augue eu quam</a></h5>
+									<div class="description">
+										<p>Maecenas pretium, ipsum ullamcorper ac, felis. Pellentesque habitant morbi tristique mauris vehicula sit amet erat. Sed et luctus augue imperdiet ...</p>
+									</div>
+									<a href="news-detail.html" title="" class="text-red fb">XEM CHI TIẾT >>></a>
+								</div>
+							</div>
+							<div class="blog-item col-md-6 col-sm-6 col-xs-12">
+								<div class="news-blog-img">
+									<a href="news-detail.html" class="image">
+										<img src="_images/post/event/3.png" alt="" class="img-responsive center-block">
+										<i class="icofont icofont-link-alt"></i>
+									</a>
+								</div>
+								<div class="news-blog-content">
+									<h5 class="title fb"><a href="news-detail.html">Aenean augue eu quam</a></h5>
+									<div class="description">
+										<p>Maecenas pretium, ipsum ullamcorper ac, felis. Pellentesque habitant morbi tristique mauris vehicula sit amet erat. Sed et luctus augue imperdiet ...</p>
+									</div>
+									<a href="news-detail.html" title="" class="text-red fb">XEM CHI TIẾT >>></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="slick-nav text-center">
+						<div class="slick-nav-left-2"></div>
+						<div class="slick-nav-right-2"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer Area
+	============================================ -->
+	<div class="footer-area overlay overlay-black overlay-70 pb-60 pt-60">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-xs-12 text-left">
+					<div class="footer-left">
+						<div class="text-upppercase fs-20 text-white fb mb-45">
+							ĐẠI LÝ SUZUKI SÀI GÒN NGÔI SAO
+						</div>
+						<div>
+							<img src="_images/post/2.png" alt="">
+						</div>
+					</div>
+					<div class="footer-right-info fs-16 text-white">
+						<p>
+							510 Quốc Lộ 13, Phường Hiệp Bình Phước
+							<br>Quận Thủ Đức, Tp.HCM
+						</p>
+						<p>0983 036 221 – 0932001210 - 0942412532</p>
+						<p>manhtoan.saigonngoisao@gmail.com</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+<!-- Body main wrapper end -->
+
+<!-- JS -->
+
+<!-- jQuery JS
+============================================ -->
+<script src="js/vendor/jquery-1.12.0.min.js"></script>
+<!-- Bootstrap JS
+============================================ -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Plugins JS
+============================================ -->
+<script src="js/plugins.js"></script>
+<!-- Ajax Mail JS
+============================================ -->
+<script src="js/ajax-mail.js"></script>
+<!-- WOW JS
+============================================ -->
+<script src="js/wow.min.js"></script>
+<!-- Style Customizer JS
+============================================ -->
+<script src="js/style-customizer.js"></script>
+<!-- Main JS
+============================================ -->
+<script src="js/main.js"></script>
+
+<script lang="javascript">(function() {var pname = ( (document.title !='')? document.title : document.querySelector('h1').innerHTML );var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async=1; ga.src = '//live.vnpgroup.net/js/web_client_box.php?hash=56fc3820f5a93eeb49aa6d0626d01830&data=eyJzc29faWQiOjQ4ODk4NDUsImhhc2giOiJiMWZmNmM2NDIwNzkzMGNkYzA3Y2E0YjUzMTM2MDdkZCJ9&pname='+pname;var s = document.getElementsByTagName('script');s[0].parentNode.insertBefore(ga, s[0]);})();</script>	
+</body>
+</html>

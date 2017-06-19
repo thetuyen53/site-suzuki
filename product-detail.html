@@ -1,0 +1,552 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>product detail - Suzuki</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+	<!-- Fonts -->
+	<link href="fonts/lato/lato.css" rel="stylesheet">
+	<!-- CSS -->
+	<!-- Bootstrap CSS
+	============================================ -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- Icon Font CSS
+	============================================ -->
+	<link rel="stylesheet" href="css/icofont.css">
+	<!-- Plugins CSS
+	============================================ -->
+	<link rel="stylesheet" href="css/plugins.css">
+	<!-- ShortCodes CSS
+	============================================ -->
+	<link rel="stylesheet" href="css/shortcode/shortcodes.css">
+	<!-- Style CSS
+	============================================ -->
+	<link rel="stylesheet" href="style.css">
+	<!-- Responsive CSS
+	============================================ -->
+	<link rel="stylesheet" href="css/responsive.css">
+    <!-- Style customizer (Remove these two lines please) -->
+    <link rel="stylesheet" href="css/style-customizer.css">
+
+    <!-- global CSS
+	============================================ -->
+	<link rel="stylesheet" href="css/global.css">
+
+	<!-- Modernizer JS
+	============================================ -->
+	<script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+<!-- Pre Loader
+============================================ -->
+<div class="preloader">
+	<div class="loading-center">
+		<div class="loading-center-absolute">
+			<div class="object object_one"></div>
+			<div class="object object_two"></div>
+			<div class="object object_three"></div>
+		</div>
+	</div>
+</div>
+<!-- Body main wrapper start -->
+<div class="wrapper fix">
+
+	<!-- BEIGN  menuFixed -->
+	<ul id="menuFixed" class="menuFixed">
+		<li>
+			<!--===FORMSEARCH==-->
+			<div class="formSearch">
+				<script language="javascript">
+					
+					function check_search(f)
+					{
+						var key_default = "Từ khóa" ;
+								var keyword = f.keyword.value;
+						var key_len = f.keyword.value.length;
+								if( (keyword==key_default) || (keyword=='') )		{
+							alert("Vui lòng nhập từ khóa");
+							f.keyword.focus();
+							return false;
+						}
+						if( key_len<2 ){
+							alert("Từ khóa tới thiểu là 2 ký tự");
+							f.keyword.focus();
+							return false;
+						}
+						return true;
+						}
+				</script>
+				<form id="formSearch" name="formSearch" method="POST" action="" onsubmit="return check_search(this);" class="box_search">
+					<span class="divText">
+						<input name="keyword" id="keyword" type="text" class="text_search" placeholder="Từ khóa" value="">
+					</span>
+					<span class="divIcon icofont icofont-search">
+						<button id="btn-search" name="btn-search" type="submit" class="btn" value="Tìm"><span>Tìm</span></button>
+					</span>
+					<input name="do_search" value="1" type="hidden">
+					<div class="clear"></div>
+				</form>
+			</div>
+			<!--===FORMSEARCH==-->
+		</li>
+		<li>
+			<span class="divText"><span>123456789</span></span>
+			<span class="divIcon icofont icofont-phone"></span>
+		</li>
+		<li>
+			<a href="#">
+				<span class="divText"><span>Hỗ trợ khách hàng</span></span>
+				<span class="divIcon icofont icofont-wrench"></span>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<span class="divText"><span>Tài chính thông minh</span></span>
+				<span class="divIcon icofont icofont-calculator"></span>
+			</a>
+		</li>
+		<li class="liShare">
+			<span class="divText">
+				<span class="social">
+					<span class="facebook"><a href="#fb" target="_blank"><i class="icofont icofont-social-facebook"></i></a></span>
+					<span class="google-plus"><a href="#google" target="_blank"><i class="icofont icofont-social-google-plus"></i></a></span>
+					<span class="youtube"><a href="#youtube" target="_blank"><i class="icofont icofont-social-youtube"></i></a></span>
+				</span>
+			</span>
+			<span class="divIcon icofont icofont-share-alt"></span>
+		</li>
+	</ul>
+
+<!-- Header 1
+============================================ -->
+<div class="header-area header-absolute header-transparent">
+	<div class="header-bottom sticky">
+		<div class="container">
+			<div class="row">
+				<!-- Header Bottom -->
+				<div class="col-xs-12">
+					<div class="navbar-header">
+						<a href="index.html" class="logo navbar-brand"><img id="logo_img" src="_images/logo.png" alt="logo" /></a>
+					</div>
+					<div class="main-menu mean-menu float-right">
+						<nav>
+							<ul>
+								<li class="">
+									<a href="index.html">TRANG CHỦ</a>
+								</li>
+								<li>
+									<a href="product.html">SẢN PHẨM <i class="icofont icofont-simple-down"></i></a>
+									<ul>
+										<li>
+											<a href="product.html#tab-1">XE DU LỊCH</a>
+										</li>
+										<li>
+											<a href="product.html#tab-2">XE TẢI</a>
+										</li>
+										<li>
+											<a href="product.html#tab-3">XE TẢI CŨ</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="news.html">TIN TỨC</a>
+								</li>
+								<li>
+									<a href="service.html">DỊCH VỤ</a>
+								</li>
+								<li class="active">
+									<a href="contact.html">LIÊN HỆ</a>
+								</li>
+								<li class="social-link">
+									<a href="#fb"><img src="_images/icon/1.png" alt=""></a>
+									<a href="#google"><img src="_images/icon/2.png" alt=""></a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="mobile-menu"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- Testimonial Area
+============================================ -->
+<div class=" overlay-white  pt-90 pb-90">
+	<div class="container">
+		<div class="product-detail-slick-box">
+			<div class="product-detail-slick">
+				<div class="row">
+					<div class="col-sm-6">
+						<blockquote>
+						  	<h1 class="text-red fb">SUZUKI ERTIGA</h1>
+						  	<h3 class="text-blue">LỊCH LÃM - PHONG CÁCH - ĐẦY CÁ TÍNH</h3>
+						  	<div class="text-gray">
+						  		<div class="fs-18 fb text-upppercase">> NGUYÊN CHIẾC TỪ HUNGARY</div>
+						  		<div>&nbsp;&nbsp;Chất lượng cao từ Châu Âu, không định giá trị</div>
+						  	</div>
+						  	<div class="text-gray">
+						  		<div class="fs-18 fb text-upppercase">> ĐA DẠNG MÀU SẮC</div>
+						  		<div>&nbsp;&nbsp;14 Màu cá tính, tha hồ thể hiện cá tính</div>
+						  	</div>
+						  	<div class="text-gray">
+						  		<div class="fs-18 fb text-upppercase">> KHÔNG GIAN RỘNG RÃI</div>
+						  		<div>&nbsp;&nbsp;Xe 5 chỗ ngồi, phù hộp cho gia đình và bạn bè</div>
+						  	</div>
+						</blockquote>
+					</div>
+					<div class="col-sm-6">
+						<div class="product-detail-img">
+							<img src="_images/banner/1.png" alt="" class="img-responsive center-block">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6">
+						<blockquote>
+						  	<h1 class="text-red fb">SUZUKI ERTIGA</h1>
+						  	<h3 class="text-blue">LỊCH LÃM - PHONG CÁCH - ĐẦY CÁ TÍNH</h3>
+						  	<div class="text-gray">
+						  		<div class="fs-18 fb text-upppercase">> NGUYÊN CHIẾC TỪ HUNGARY</div>
+						  		<div>&nbsp;&nbsp;Chất lượng cao từ Châu Âu, không định giá trị</div>
+						  	</div>
+						  	<div class="text-gray">
+						  		<div class="fs-18 fb text-upppercase">> ĐA DẠNG MÀU SẮC</div>
+						  		<div>&nbsp;&nbsp;14 Màu cá tính, tha hồ thể hiện cá tính</div>
+						  	</div>
+						  	<div class="text-gray">
+						  		<div class="fs-18 fb text-upppercase">> KHÔNG GIAN RỘNG RÃI</div>
+						  		<div>&nbsp;&nbsp;Xe 5 chỗ ngồi, phù hộp cho gia đình và bạn bè</div>
+						  	</div>
+						</blockquote>
+					</div>
+					<div class="col-sm-6">
+						<div class="product-detail-img">
+							<img src="_images/banner/1.png" alt="" class="img-responsive center-block">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6">
+						<blockquote>
+						  	<h1 class="text-red fb">SUZUKI ERTIGA</h1>
+						  	<h3 class="text-blue">LỊCH LÃM - PHONG CÁCH - ĐẦY CÁ TÍNH</h3>
+						  	<div class="text-gray">
+						  		<div class="fs-18 fb text-upppercase">> NGUYÊN CHIẾC TỪ HUNGARY</div>
+						  		<div>&nbsp;&nbsp;Chất lượng cao từ Châu Âu, không định giá trị</div>
+						  	</div>
+						  	<div class="text-gray">
+						  		<div class="fs-18 fb text-upppercase">> ĐA DẠNG MÀU SẮC</div>
+						  		<div>&nbsp;&nbsp;14 Màu cá tính, tha hồ thể hiện cá tính</div>
+						  	</div>
+						  	<div class="text-gray">
+						  		<div class="fs-18 fb text-upppercase">> KHÔNG GIAN RỘNG RÃI</div>
+						  		<div>&nbsp;&nbsp;Xe 5 chỗ ngồi, phù hộp cho gia đình và bạn bè</div>
+						  	</div>
+						</blockquote>
+					</div>
+					<div class="col-sm-6">
+						<div class="product-detail-img">
+							<img src="_images/banner/1.png" alt="" class="img-responsive center-block">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+				<div class="tabs-small">
+					<!-- Nav tabs -->
+					<ul class="nav nav-tabs" role="tablist">
+						<li role="presentation" class=""><a href="#tab-product-detail-1" aria-controls="tab-product-detail-1" role="tab" data-toggle="tab" aria-expanded="true">THÔNG TIN</a></li>
+						<li role="presentation" class=""><a href="#tab-product-detail-2" aria-controls="tab-product-detail-2" role="tab" data-toggle="tab" aria-expanded="false">MÀU SẮC</a></li>
+						<li role="presentation" class=""><a href="#tab-product-detail-3" aria-controls="tab-product-detail-3" role="tab" data-toggle="tab" aria-expanded="false">TÍNH NĂNG</a></li>
+						<li role="presentation" class=""><a href="#tab-product-detail-4" aria-controls="tab-product-detail-4" role="tab" data-toggle="tab" aria-expanded="false">AN TOÀN</a></li>
+						<li role="presentation" class=""><a href="#tab-product-detail-5" aria-controls="tab-product-detail-5" role="tab" data-toggle="tab" aria-expanded="false">THÔNG SỐ</a></li>
+						<li role="presentation" class="active"><a href="#tab-product-detail-6" aria-controls="tab-product-detail-6" role="tab" data-toggle="tab" aria-expanded="false">BẢO HÀNH</a></li>
+						<li role="presentation" class=""><a href="#tab-product-detail-7" aria-controls="tab-product-detail-7" role="tab" data-toggle="tab" aria-expanded="false">HÌNH ẢNH</a></li>
+					</ul>
+					<!-- Tab panes -->
+					<div class="tab-content">
+						<div role="tabpanel" class="tab-pane fade" id="tab-product-detail-1">
+							<div class="tab-body">
+								<div class="row">
+									<div class="col-md-12">
+										Đang chờ cập nhật ....
+									</div>
+								</div>
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="tab-product-detail-2">
+							<div class="tab-body">
+								<div class="row">
+									<div class="col-md-12">
+										Đang chờ cập nhật ....
+									</div>
+								</div>
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="tab-product-detail-3">
+							<div class="tab-body">
+								<div class="row">
+									<div class="col-md-12">
+										Đang chờ cập nhật ....
+									</div>
+								</div>
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="tab-product-detail-4">
+							<div class="tab-body">
+								<div class="row">
+									<div class="col-md-12">
+										Đang chờ cập nhật ....
+									</div>
+								</div>
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="tab-product-detail-5">
+							<div class="tab-body">
+								<div class="row">
+									<div class="col-md-12">
+										Đang chờ cập nhật ....
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div role="tabpanel" class="tab-pane fade active in" id="tab-product-detail-6">
+							<div class="tab-body">
+								<div class="row">
+									<div class="col-md-12">
+										<div class="product-detail-content pb-60">
+											<h3 class="text-blue fb">CÁC ĐẠI LÝ BẢO HÀNH - BẢO DƯỠNG</h3>
+											<div class="text-gray fb">
+												Tổng hợp các đại lý chính thức của Suzuki, quý khách có thể đến bảo hành - bảo dưỡng
+												và thay thế phụ tùng chính hãng
+											</div>
+											<div class="text-gray">
+												<p><span class="fb">01.</span> Công ty cổ phần Sài Gòn Ngôi Sao</p>
+												<p>Số 510 Quốc Lộ 13, P. Hiệp Bình Phước, Q.Thủ Đức, Tp.HCM - (08) 3726 3023</p>
+											</div>
+											<div class="text-gray">
+												<p><span class="fb">02.</span> Công ty cổ phần Sài Gòn Ngôi Sao</p>
+												<p>Số 510 Quốc Lộ 13, P. Hiệp Bình Phước, Q.Thủ Đức, Tp.HCM - (08) 3726 3023</p>
+											</div>
+											<div class="text-gray">
+												<p><span class="fb">03.</span> Công ty cổ phần Sài Gòn Ngôi Sao</p>
+												<p>Số 510 Quốc Lộ 13, P. Hiệp Bình Phước, Q.Thủ Đức, Tp.HCM - (08) 3726 3023</p>
+											</div>
+											<div class="text-gray">
+												<p><span class="fb">04.</span> Công ty cổ phần Sài Gòn Ngôi Sao</p>
+												<p>Số 510 Quốc Lộ 13, P. Hiệp Bình Phước, Q.Thủ Đức, Tp.HCM - (08) 3726 3023</p>
+											</div>
+											<div class="text-gray">
+												<p><span class="fb">05.</span> Công ty cổ phần Sài Gòn Ngôi Sao</p>
+												<p>Số 510 Quốc Lộ 13, P. Hiệp Bình Phước, Q.Thủ Đức, Tp.HCM - (08) 3726 3023</p>
+											</div>
+											<hr>
+										</div>
+
+										<div class="product-detail-content pb-60">
+											<h3 class="text-blue fb">TƯ VẤN KHÁCH HÀNG</h3>
+											<div class="text-gray fb">
+												Tư vấn khách hàng về các loại xe ô tô Suzuki, các chính sách bảo hành, phụ tùng, phụ kiện chính hãng
+												Các hỏng hóc thường gặp hoặc sự cố khi sử dụng xe
+											</div>
+											<a href="" title="" class="text-red">Xem chi tiết</a>
+											<hr>
+										</div>
+
+
+										<div class="product-detail-content pb-60">
+											<h3 class="text-blue fb">BẢO DƯỠNG, BẢO HÀNH ĐỊNH KỲ</h3>
+											<div class="text-gray fb">
+												Khi mua xe tại Suzuki Sài Gòn Ngôi Sao được bảo hành, bảo dưỡng định kỳ, các chính sách ưud9ai4
+												mua xe và bảo dưỡng thay thế phụ tùng tại công ty
+											</div>
+											<a href="" title="" class="text-red">Xem chi tiết</a>
+											<hr>
+										</div>									
+									</div>
+								</div>
+								<div class="row text-center pt-90">
+									<a href="#" class="btn color fb fs-20">ĐĂNG KÝ LÁI XE THỬ MIỄN PHÍ</a>
+								</div>
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="tab-product-detail-7">
+							<div class="tab-body">
+								<div class="row">
+									<div class="col-md-12">
+										Đang chờ cập nhật ....
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</div>
+
+<!-- Testimonial Area
+============================================ -->
+<div id="testimonial-area" class="testimonial-area overlay overlay-white overlay-80 text-center pt-90 pb-90">
+	<div class="container">
+		<div class="row">
+			<div class="blog-slick-box">
+				<div class="blog-slick blog">
+					<!-- begin 1 -->
+					<div class="blog-item">
+						<a href="news-detail.html" class="image">
+							<img src="_images/post/small/1.png" alt="">
+							<i class="icofont icofont-link-alt"></i>
+						</a>
+						<div class="text-center ">
+							<h5 class="title fs-20 fb"><a href="news-detail.html">Ngọc Anh (TP.HCM 1)</a></h5>
+							<div class="meta fix">
+								<p>Giao xe ngày 30/05/2017</p>
+							</div>
+						</div>
+						<div class="description text-left">
+							<p>Tham khảo qua nhiều dòng xe, nhưng tôi vẫn tin chọn Suziki Vitara nhập khẩu chất lượng...</p>
+						</div>
+					</div>
+					<div class="blog-item">
+						<a href="news-detail.html" class="image">
+							<img src="_images/post/small/2.png" alt="">
+							<i class="icofont icofont-link-alt"></i>
+						</a>
+						<div class="text-center ">
+							<h5 class="title fs-20 fb"><a href="news-detail.html">Ngọc Anh (TP.HCM)</a></h5>
+							<div class="meta fix">
+								<p>Giao xe ngày 30/05/2017</p>
+							</div>
+						</div>
+						<div class="description text-left">
+							<p>Tham khảo qua nhiều dòng xe, nhưng tôi vẫn tin chọn Suziki Vitara nhập khẩu chất lượng...</p>
+						</div>
+					</div>
+					<div class="blog-item">
+						<a href="news-detail.html" class="image">
+							<img src="_images/post/small/3.png" alt="">
+							<i class="icofont icofont-link-alt"></i>
+						</a>
+						<div class="text-center ">
+							<h5 class="title fs-20 fb"><a href="news-detail.html">Ngọc Anh (TP.HCM)</a></h5>
+							<div class="meta fix">
+								<p>Giao xe ngày 30/05/2017</p>
+							</div>
+						</div>
+						<div class="description text-left">
+							<p>Tham khảo qua nhiều dòng xe, nhưng tôi vẫn tin chọn Suziki Vitara nhập khẩu chất lượng...</p>
+						</div>
+					</div>
+					<div class="blog-item">
+						<a href="news-detail.html" class="image">
+							<img src="_images/post/small/1.png" alt="">
+							<i class="icofont icofont-link-alt"></i>
+						</a>
+						<div class="text-center ">
+							<h5 class="title fs-20 fb"><a href="news-detail.html">Ngọc Anh (TP.HCM)</a></h5>
+							<div class="meta fix">
+								<p>Giao xe ngày 30/05/2017</p>
+							</div>
+						</div>
+						<div class="description text-left">
+							<p>Tham khảo qua nhiều dòng xe, nhưng tôi vẫn tin chọn Suziki Vitara nhập khẩu chất lượng...</p>
+						</div>
+					</div>
+					<div class="blog-item">
+						<a href="news-detail.html" class="image">
+							<img src="_images/post/small/2.png" alt="">
+							<i class="icofont icofont-link-alt"></i>
+						</a>
+						<div class="text-center ">
+							<h5 class="title fs-20 fb"><a href="news-detail.html">Ngọc Anh (TP.HCM)</a></h5>
+							<div class="meta fix">
+								<p>Giao xe ngày 30/05/2017</p>
+							</div>
+						</div>
+						<div class="description text-left">
+							<p>Tham khảo qua nhiều dòng xe, nhưng tôi vẫn tin chọn Suziki Vitara nhập khẩu chất lượng...</p>
+						</div>
+					</div>
+				</div>
+				<div class="slick-nav">
+					<div class="slick-nav-left"></div>
+					<div class="slick-nav-right"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<!-- Footer Area
+============================================ -->
+<div class="footer-area overlay overlay-black overlay-70 pb-60 pt-60">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 col-xs-12 text-left">
+				<div class="footer-left">
+					<div class="text-upppercase fs-20 text-white fb mb-45">
+						ĐẠI LÝ SUZUKI SÀI GÒN NGÔI SAO
+					</div>
+					<div>
+						<img src="_images/post/2.png" alt="">
+					</div>
+				</div>
+				<div class="footer-right-info fs-16 text-white">
+					<p>
+						510 Quốc Lộ 13, Phường Hiệp Bình Phước
+						<br>Quận Thủ Đức, Tp.HCM
+					</p>
+					<p>0983 036 221 – 0932001210 - 0942412532</p>
+					<p>manhtoan.saigonngoisao@gmail.com</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</div>
+<!-- Body main wrapper end -->
+
+<!-- JS -->
+
+<!-- jQuery JS
+============================================ -->
+<script src="js/vendor/jquery-1.12.0.min.js"></script>
+<!-- Bootstrap JS
+============================================ -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Plugins JS
+============================================ -->
+<script src="js/plugins.js"></script>
+<!-- Ajax Mail JS
+============================================ -->
+<script src="js/ajax-mail.js"></script>
+<!-- WOW JS
+============================================ -->
+<script src="js/wow.min.js"></script>
+<!-- Style Customizer JS
+============================================ -->
+<script src="js/style-customizer.js"></script>
+<!-- Main JS
+============================================ -->
+<script src="js/main.js"></script>
+<script lang="javascript">(function() {var pname = ( (document.title !='')? document.title : document.querySelector('h1').innerHTML );var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async=1; ga.src = '//live.vnpgroup.net/js/web_client_box.php?hash=56fc3820f5a93eeb49aa6d0626d01830&data=eyJzc29faWQiOjQ4ODk4NDUsImhhc2giOiJiMWZmNmM2NDIwNzkzMGNkYzA3Y2E0YjUzMTM2MDdkZCJ9&pname='+pname;var s = document.getElementsByTagName('script');s[0].parentNode.insertBefore(ga, s[0]);})();</script>	
+</body>
+</html>
